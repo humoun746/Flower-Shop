@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Flower Shop</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="./index.html" class="logo"><span>Flower</span> Shop</a>
+
+            <ul class="nav__list">
+                <li><a href="./index.html" class="nav__link">Home</a></li>
+                <li><a href="shop.html" class="nav__link">Shop</a></li>
+                <li><a href="index.html#blog" class="nav__link">Blog</a></li>
+                <li><a href="index.html#footer" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="nav__buttons">
+                <a href="login.html" class="nav__button"><img src="./images/person.svg" alt=""></a>
+
+                <a href="cart.html" class="nav__button nav__cart">
+                    <img src="./images/cart.svg" alt="">
+                    <span class="cart-count" data-cart-count hidden>0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="empty-cart container">
+            <div class="empty-cart__content">
+                <img class="empty-cart__image" src="./images/empty-cart.png" alt="">
+                <span class="empty-cart__text">There's nothing here yet. <a class="empty-cart__link" href="shop.html">Go shopping</a></span>
+            </div>
+        </section>
+        
+        <section class="cart container" hidden>
+            <div class="cart__content">
+                <div class="cart__list">
+                    <h2 class="cart__title">Your Cart</h2>
+                    <div class="cart__items"></div>
+                </div>
+
+                <div class="cart__checkout">
+                    <h2 class="checkout__price"></h2>
+                    <button class="checkout__button">Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./scripts/cart.js"></script>
+</body>
+</html>

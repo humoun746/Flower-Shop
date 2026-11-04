@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Flower Shop</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="./index.html" class="logo"><span>Flower</span> Shop</a>
+
+            <ul class="nav__list">
+                <li><a href="./index.html" class="nav__link">Home</a></li>
+                <li><a href="shop.html" class="nav__link nav__link--active">Shop</a></li>
+                <li><a href="index.html#blog" class="nav__link">Blog</a></li>
+                <li><a href="index.html#footer" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="nav__buttons">
+                <a href="login.html" class="nav__button"><img src="./images/person.svg" alt=""></a>
+                
+                <a href="cart.html" class="nav__button nav__cart">
+                    <img src="./images/cart.svg" alt="">
+                    <span class="cart-count" data-cart-count hidden>0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="product">
+            <div class="product__content container">
+                <div class="product__info">
+                    <img class="product__image" src="" alt="">
+
+                    <div class="product__details">
+                        <h2 class="product__name"></h2>
+                        <p class="product__desc"></p>
+                        
+                        <div class="product__rating">
+                            <img src="./images/star.svg" alt="">
+                            <span class="rating__value"></span>
+                        </div>
+
+                        <span class="product__reviews-num"></span>
+
+                        <div class="product__bottom">
+                            <span class="product__price"></span>
+                            <button class="product__button"><img src="./images/white-cart.svg" alt="">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__reviews">
+                    <div class="reviews__top">
+                        <h2 class="reviews__title">Reviews</h2>
+                        <button class="reviews__add-button">Add a review</button>
+                    </div>
+
+                    <div class="comment-card">
+                        <div class="comment-card__profile">
+                            <img src="./images/atena.png" alt="">
+                            <h3 class="comment-card__author">Atena</h3>
+                        </div>
+
+                        <div class="comment-card__info">
+                            <p class="comment-card__text">This flower is the best gift i’ve ever got</p>
+                            <div class="comment-card__rating">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-card">
+                        <div class="comment-card__profile">
+                            <img src="./images/atena.png" alt="">
+                            <h3 class="comment-card__author">Atena</h3>
+                        </div>
+
+                        <div class="comment-card__info">
+                            <p class="comment-card__text">This flower is the best gift i’ve ever got</p>
+                            <div class="comment-card__rating">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment-card">
+                        <div class="comment-card__profile">
+                            <img src="./images/atena.png" alt="">
+                            <h3 class="comment-card__author">Atena</h3>
+                        </div>
+
+                        <div class="comment-card__info">
+                            <p class="comment-card__text">This flower is the best gift i’ve ever got</p>
+                            <div class="comment-card__rating">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__recommendations">
+                    <h3 class="recommendations__title">You might also like</h3>
+
+                    <div class="recommendations__list">
+                        <img src="./images/flower1.png" alt="">
+                        <img src="./images/flower2.png" alt="">
+                        <img src="./images/flower3.png" alt="">
+                        <img src="./images/flower4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="toast-container"></div>
+
+    <script type="module" src="./scripts/product.js"></script>
+</body>
+</html>
